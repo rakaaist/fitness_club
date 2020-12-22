@@ -18,7 +18,7 @@ class Navigation extends View
         $nav = [
             'left' => [
                 App::$router::getUrl('index') => 'Home',
-                App::$router::getUrl('about') => 'About us',
+                App::$router::getUrl('about') => 'Feedback',
             ]
         ];
 

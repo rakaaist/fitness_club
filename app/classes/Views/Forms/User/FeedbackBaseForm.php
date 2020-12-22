@@ -12,7 +12,7 @@ class FeedbackBaseForm extends Form
     {
         parent::__construct([
             'attr' => [
-                'method' => 'POST',
+                'class' => 'feedback-form'
             ],
             'fields' => [
                 'comment' => [

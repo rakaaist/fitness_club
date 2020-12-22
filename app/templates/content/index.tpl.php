@@ -3,34 +3,27 @@
 </section>
 <section class="home-services-container">
     <div class="home-service">
-        <img class="home-service-img" src="/media/images/personal-training.jpg" alt="personal-training">
+        <img class="home-service-img" src="/media/images/personal-training.jpg" alt="training">
         <div class="home-service-info">
-            <h3 class="home-service-title">Personal training</h3>
-            <p class="home-service-description">A Personal Trainer can work with your goals and provide tailored advice
-                and motivation to keep you on track. Our Personal Trainers deliver the highest standard of support
-                across a wide range of specialisations including supports for sport injury recovery, weight loss or to
-                train for specific challenges outside the gym.</p>
+            <h3 class="home-service-title">Training</h3>
+            <p class="home-service-description">A Personal Trainer can work with your goals and provide advice
+                and motivation to keep you on track.</p>
         </div>
     </div>
     <div class="home-service">
         <img class="home-service-img" src="/media/images/group-fitness.jpg" alt="classes">
         <div class="home-service-info">
-            <h3 class="home-service-title">Group classes</h3>
-            <p class="home-service-description">Mixing the hottest music with cutting-edge exercise science, motivation
-                and the energy of many, group fitness classes make you fall in love with fitness. Discover
-                our range of world-class group fitness workouts - body combat, body balance, body pump, body step, RPM
-                and many more .</p>
+            <h3 class="home-service-title">Classes</h3>
+            <p class="home-service-description">Mix the hottest music with various exercises, motivation
+                and the energy so you fall in love with fitness.</p>
         </div>
     </div>
     <div class="home-service">
         <img class="home-service-img" src="/media/images/boxing.jpg" alt="boxing">
         <div class="home-service-info">
             <h3 class="home-service-title">Boxing</h3>
-            <p class="home-service-description">Looking for a rock-solid body? As you learn to master the six basic
-                boxing punches you’re sure to get shredded. It’s you versus the bag in this invigorating, empowering
-                class. Discover
-                your inner warrior and reveal incredible physical results as you build muscular strength and cardio
-                endurance.</p>
+            <p class="home-service-description">By joining reveal your physical results as
+                you build muscular strength and cardio endurance.</p>
         </div>
     </div>
 </section>
