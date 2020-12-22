@@ -17,7 +17,9 @@ class LoginController extends GuestController
         parent::__construct();
         $this->form = new LoginForm();
         $this->page = new BasePage([
-            'title' => 'LOGIN'
+            'title' => 'LOGIN',
+            'main-class' => 'login-main',
+            'body-class' => 'login-body'
         ]);
     }
 

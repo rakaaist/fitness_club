@@ -16,13 +16,16 @@ class RegisterController extends GuestController
         parent::__construct();
         $this->form = new RegisterForm();
         $this->page = new BasePage([
-            'title' => 'Register'
+            'title' => 'Register',
+            'main-class' => 'register-main',
+            'body-class' => 'register-body'
         ]);
     }
     public function register()
     {
         if ($this->form->validate()) {
             $clean_inputs = $this->form->values();
+            $clean_inputs['id'] = uniqid();
             unset($clean_inputs['password_repeat']);
             App::$db->insertRow('users', $clean_inputs);
             header('Location: /login');

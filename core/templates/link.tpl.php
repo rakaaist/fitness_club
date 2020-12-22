@@ -1,1 +1,1 @@
-<a href="<?php print $data['url']; ?>"><?php print $data['text']; ?></a>
+<a href="<?php print $data['url']; ?>" class="<?php print $data['class']; ?>"><?php print $data['text']; ?></a>

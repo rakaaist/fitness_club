@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,100&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: silver;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+/*
+  # Header
+*/
+
+header {
+    height: 70px;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-side {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+}
+
+a:hover {
+    color: black;
+}
+
+/*
+  # Footer
+*/
+
+footer {
+    height: 70px;
+    width: 100%;
+    background-color: #111111;
+    color: white;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/*
+  # Login and Register forms
+*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ededed;
+}
+
+.form-header {
+    font-weight: bolder;
+}
+
+input, textarea {
+    width: 250px;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+button {
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px 5px;
+    background-color: #333232;
+    color: white;
+}
+
+input, button, textarea {
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #383b40;
+}
+
+label {
+    margin: 0 auto;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.field-error {
+    color: darkred;
+    font-size: 12px;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+.login-main, .register-main {
+    padding: 40px 0 100px;
+}
+
+.login-body {
+    background-image: url("/media/images/login-bg.jpg");
+}
+
+.register-body {
+    background-image: url("/media/images/register-bg.jpg");
+    background-position: right;
+}
+
+.register-body, .login-body {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*
+  # Home page
+*/
+
+.home-hero {
+    height: 300px;
+    background-image: url("/media/images/home-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+}
+
+.home-title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.home-services-container {
+    max-width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-service {
+    border: 1px solid grey;
+    width: 25%;
+    height: 350px;
+    text-align: center;
+    background-color: white;
+}
+
+.home-service-img {
+    height: 40%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-service-info {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.home-service-title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.home-service-description {
+    font-size: 10px;
+}
+
+.home-google-map {
+    height: 300px;
+    width: 100%;
+}
+
+/*
+  # Feedback page
+*/
+.table {
+    border: 2px solid #111111;
+    background-color: #dbdbdb;
+    width: 60%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 20px auto 40px;
+}
+
+.table td, .table th {
+    border: 1px solid #AAAAAA;
+    padding: 5px 2px;
+}
+
+.table td {
+    font-size: 13px;
+    padding: 2px 5px;
+    max-width: 250px;
+}
+
+.table td:nth-child(3) {
+    text-align: left;
+}
+
+.table tr:nth-child(even) {
+    background-color: white;
+}
+
+.feedback-link {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+}
+
+.feedback-not-logged-in {
+    text-align: center;
+}
+
+.feedback-main {
+    padding: 40px 0;
+}
+
+.feedback-body {
+    background-image: url("/media/images/feedback-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+

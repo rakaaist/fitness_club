@@ -19,7 +19,9 @@ class FeedbackController
     {
         $this->page = new BasePage([
             'title' => 'Feedback',
-            'js' => ['/media/js/feedback.js']
+            'js' => ['/media/js/feedback.js'],
+            'main-class' => 'feedback-main',
+            'body-class' => 'feedback-body'
         ]);
     }
 
@@ -42,7 +44,8 @@ class FeedbackController
             $links = [
                 'register' => (new Link([
                     'url' => App::$router::getUrl('register'),
-                    'text' => 'Register'
+                    'text' => 'Register',
+                    'class' => 'feedback-link'
                 ]))->render()
             ];
         }

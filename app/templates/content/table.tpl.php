@@ -10,7 +10,7 @@
 <?php endif; ?>
 
 <?php if ($data['message']): ?>
-    <p><?php print $data['message']; ?></p>
+    <p class="feedback-not-logged-in"><?php print $data['message']; ?></p>
 <?php endif; ?>
 
 <?php foreach ($data['links'] as $link): ?>

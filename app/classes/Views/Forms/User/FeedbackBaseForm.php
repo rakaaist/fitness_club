@@ -24,7 +24,7 @@ class FeedbackBaseForm extends Form
                     ],
                     'extra' => [
                         'attr' => [
-                            'placeholder' => 'Type your feedback...',
+                            'placeholder' => 'Type your feedback (max 500 symbols)...',
                             'class' => 'input-field',
                         ],
                     ],

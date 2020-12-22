@@ -23,8 +23,7 @@ class RegisterForm extends Form
                         ],
                         'extra' => [
                             'attr' => [
-                                'placeholder' => 'Enter your name...',
-                                'class' => 'input-field',
+                                'placeholder' => 'Enter your name...'
                             ]
                         ]
                     ],
@@ -38,8 +37,7 @@ class RegisterForm extends Form
                         ],
                         'extra' => [
                             'attr' => [
-                                'placeholder' => 'Enter your surname...',
-                                'class' => 'input-field',
+                                'placeholder' => 'Enter your surname...'
                             ]
                         ]
                     ],
@@ -53,8 +51,7 @@ class RegisterForm extends Form
                         ],
                         'extra' => [
                             'attr' => [
-                                'placeholder' => 'Enter your email',
-                                'class' => 'input-field',
+                                'placeholder' => 'Enter your email'
                             ]
                         ]
                     ],
@@ -66,8 +63,7 @@ class RegisterForm extends Form
                         ],
                         'extra' => [
                             'attr' => [
-                                'placeholder' => 'Enter your password...',
-                                'class' => 'input-field',
+                                'placeholder' => 'Enter your password...'
                             ]
                         ]
                     ],
@@ -76,6 +72,11 @@ class RegisterForm extends Form
                         'type' => 'password',
                         'validators' => [
                             'validate_field_not_empty',
+                        ],
+                        'extra' => [
+                            'attr' => [
+                                'placeholder' => 'Repeat your password...'
+                            ]
                         ]
                     ],
                     'phone' => [
@@ -83,8 +84,7 @@ class RegisterForm extends Form
                         'type' => 'number',
                         'extra' => [
                             'attr' => [
-                                'placeholder' => 'Enter your phone no...',
-                                'class' => 'input-field',
+                                'placeholder' => 'Enter your phone no...'
                             ]
                         ]
                     ],
@@ -93,8 +93,7 @@ class RegisterForm extends Form
                         'type' => 'text',
                         'extra' => [
                             'attr' => [
-                                'placeholder' => 'Enter your home address...',
-                                'class' => 'input-field',
+                                'placeholder' => 'Enter your home address...'
                             ]
                         ]
                     ]
@@ -102,12 +101,7 @@ class RegisterForm extends Form
                 'buttons' => [
                     'send' => [
                         'title' => 'REGISTER',
-                        'type' => 'submit',
-                        'extra' => [
-                            'attr' => [
-                                'class' => 'btn',
-                            ]
-                        ]
+                        'type' => 'submit'
                     ]
                 ],
                 'validators' => [

@@ -12,11 +12,11 @@
     <?php endforeach; ?>
 
 </head>
-<body class="index__body">
+<body class="<?php print $data['body-class'] ?? ''; ?>">
 <header>
     <?php print $data['header'] ?>
 </header>
-<main>
+<main class="<?php print $data['main-class'] ?? ''; ?>">
     <?php print $data['content']; ?>
 </main>
 <footer>
