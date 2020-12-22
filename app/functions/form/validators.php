@@ -108,3 +108,20 @@ function validate_login(array $filtered_input, array &$form): bool
     return false;
 }
 
+/**
+ * Validates feedback message length which should be not more than 500 symbols.
+ *
+ * @param string $field_value
+ * @param array $field
+ * @return bool
+ */
+function validate_feedback_length(string $field_value, array &$field): bool
+{
+    if (strlen($field_value) > 500) {
+        $field['error'] = "Feedback is too long! Must contain up to 500 symbols.";
+
+        return false;
+    }
+
+    return true;
+}
