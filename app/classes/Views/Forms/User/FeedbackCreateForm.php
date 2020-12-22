@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Views\Forms\User;
-
 
 class FeedbackCreateForm extends FeedbackBaseForm
 {

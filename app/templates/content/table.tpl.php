@@ -4,7 +4,7 @@
 
 <!-- Create form can be pre-rendered -->
 <?php if (isset($data['forms']['create'])): ?>
-    <div class="create-form-wrapper">
+    <div>
         <?php print $data['forms']['create']; ?>
     </div>
 <?php endif; ?>

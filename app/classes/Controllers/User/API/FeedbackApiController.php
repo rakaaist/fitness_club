@@ -1,12 +1,8 @@
 <?php
 
-
 namespace App\Controllers\User\API;
 
-
 use App\App;
-use App\Controllers\Base\GuestController;
-use App\Controllers\Base\UserController;
 use App\Views\Forms\User\FeedbackCreateForm;
 use Core\Api\Response;
 
@@ -29,7 +25,6 @@ class FeedbackApiController
                 }
             }
 
-
             $feedback = $form->values();
             $feedback['id'] = App::$db->insertRow('feedback', $form->values() + [
                     'user_id' => $user_id,
@@ -47,7 +42,6 @@ class FeedbackApiController
         return $response->toJson();
     }
 
-
     /**
      * Formats row for json to be put in the table in the same format.
      *
@@ -64,6 +58,4 @@ class FeedbackApiController
             'date' => date('Y-m-d')
         ];
     }
-
-
 }

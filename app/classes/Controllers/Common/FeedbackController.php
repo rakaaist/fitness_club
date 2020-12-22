@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Controllers\Common;
-
 
 use App\App;
 use App\Views\BasePage;
@@ -13,7 +11,7 @@ use Core\Views\Link;
 
 class FeedbackController
 {
-    protected $page;
+    protected BasePage $page;
 
     public function __construct()
     {

@@ -100,7 +100,7 @@ const forms = {
         ,
         /**
          * Fills form fields with data
-         * Each data index corelates with input name attribute
+         * Each data index correlates with input name attribute
          *
          * @param {Element} form
          * @param {Object} data

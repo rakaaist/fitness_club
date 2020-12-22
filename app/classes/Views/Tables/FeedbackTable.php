@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Views\Tables;
-
 
 use Core\Views\Table;
 

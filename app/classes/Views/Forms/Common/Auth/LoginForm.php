@@ -9,9 +9,6 @@ class LoginForm extends Form
     public function __construct()
     {
         parent::__construct([
-            'attr' => [
-                'method' => 'POST',
-            ],
             'fields' => [
                 'email' => [
                     'label' => 'Email',

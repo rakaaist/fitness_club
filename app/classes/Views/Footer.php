@@ -1,10 +1,7 @@
 <?php
 
-
 namespace App\Views;
 
-
-use App\App;
 use Core\View;
 
 class Footer extends View

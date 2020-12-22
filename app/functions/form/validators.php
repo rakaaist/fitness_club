@@ -98,7 +98,7 @@ function validate_login(array $filtered_input, array &$form): bool
     if ($user) {
         if ($user['password'] === $filtered_input['password']) {
             return true;
-    } else {
+        } else {
             $form['error'] = 'Incorrect password';
 
             return false;

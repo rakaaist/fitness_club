@@ -8,13 +8,13 @@ class Response
      * Contains all response data
      * @var array
      */
-    private $data = [];
+    private array $data = [];
 
     /**
      * Contains all response errors
      * @var array
      */
-    private $errors = [];
+    private array $errors = [];
 
     public function __construct($data = [])
     {
@@ -65,5 +65,4 @@ class Response
             $this->errors[] = $body;
         }
     }
-
 }

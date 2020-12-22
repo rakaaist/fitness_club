@@ -17,8 +17,7 @@ class InstallController
             'email' => 'admin@fitness.lt',
             'password' => 'admin',
             'phone' => '868686868',
-            'address' => 'Sauletekio al. 15',
-            'id' => uniqid()
+            'address' => 'Sauletekio al. 15'
         ]);
         App::$db->createTable('feedback');
     }

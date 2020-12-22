@@ -2,9 +2,8 @@
 
 namespace Core;
 
-class Router extends \Core\Abstracts\Router
+class Router extends Abstracts\Router
 {
-
     /**
      * This is the array where we will add routes, it will look like this:
      * $this->routes = [
@@ -18,7 +17,8 @@ class Router extends \Core\Abstracts\Router
      *
      * @var array
      */
-    protected static  $routes = [];
+    protected static $routes = [];
+
     /**
      * We will call this as follows:
      * Router::add('login', '/login', '\App\Controllers\Auth\LoginController', 'index')
@@ -49,7 +49,6 @@ class Router extends \Core\Abstracts\Router
             'controller_name' => $controller_name,
             'controller_method' => $controller_method
         ];
-
     }
 
     /**
@@ -60,8 +59,7 @@ class Router extends \Core\Abstracts\Router
      */
     protected static function getControllerInstance(string $controller_name)
     {
-        return  new $controller_name;
-
+        return new $controller_name;
     }
 
     /**
@@ -81,7 +79,6 @@ class Router extends \Core\Abstracts\Router
         }
 
         return null;
-
     }
 
     /**
@@ -94,7 +91,6 @@ class Router extends \Core\Abstracts\Router
     public static function getUrl($name): ?string
     {
         return self::$routes[$name]['url'] ?? null;
-
     }
 
     /**
@@ -119,5 +115,4 @@ class Router extends \Core\Abstracts\Router
         header("HTTP/1.0 404 Not Found");
         exit();
     }
-
 }

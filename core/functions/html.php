@@ -72,6 +72,13 @@ function button_attr(string $button_id, array $button): string
     return html_attr($attributes);
 }
 
+/**
+ * Creates html tag of attributes for select input
+ *
+ * @param string $field_id
+ * @param array $field
+ * @return string
+ */
 function select_attr(string $field_id, array $field): string
 {
     $attributes = [
@@ -81,6 +88,13 @@ function select_attr(string $field_id, array $field): string
     return html_attr($attributes);
 }
 
+/**
+ * Creates html tag of attributes for option
+ *
+ * @param string $option_id
+ * @param array $field
+ * @return string
+ */
 function option_attr(string $option_id, array $field): string
 {
     $attributes = [

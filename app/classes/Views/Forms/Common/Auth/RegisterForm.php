@@ -9,9 +9,6 @@ class RegisterForm extends Form
     public function __construct()
     {
         parent::__construct([
-                'attr' => [
-                    'method' => 'POST',
-                ],
                 'fields' => [
                     'name' => [
                         'label' => 'Name',
@@ -84,7 +81,7 @@ class RegisterForm extends Form
                         'type' => 'number',
                         'extra' => [
                             'attr' => [
-                                'placeholder' => 'Enter your phone no...'
+                                'placeholder' => 'Enter phone no. 370 645 12345'
                             ]
                         ]
                     ],
@@ -100,7 +97,7 @@ class RegisterForm extends Form
                 ],
                 'buttons' => [
                     'send' => [
-                        'title' => 'REGISTER',
+                        'title' => 'Register',
                         'type' => 'submit'
                     ]
                 ],

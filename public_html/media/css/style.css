@@ -51,7 +51,8 @@ ul {
 
 li {
     list-style: none;
-    margin-right: 15px;
+    margin-right: 8px;
+    padding: 2px 5px;
 }
 
 .nav-list:last-child {
@@ -61,11 +62,15 @@ li {
 a {
     text-decoration: none;
     color: white;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 a:hover {
-    color: #fa7894;
+    color: #c41010;
+}
+
+.active {
+    background-color: #c41010;
 }
 
 /*
@@ -268,7 +273,7 @@ textarea {
 .feedback-link {
     display: block;
     width: 100px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     text-align: center;
     color: black;
     font-weight: bolder;
@@ -345,7 +350,7 @@ textarea {
     */
 
     .table, .feedback-form {
-        max-width: 350px;
+        max-width: 300px;
         width: 100%;
     }
 }

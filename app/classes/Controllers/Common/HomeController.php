@@ -8,7 +8,7 @@ use Core\View;
 
 class HomeController
 {
-    protected $page;
+    protected BasePage $page;
 
     /**
      * Controller constructor.
@@ -37,18 +37,8 @@ class HomeController
      */
     public function index(): ?string
     {
-        $user = App::$session->getUser();
-
-        if ($user) {
-            $message = "Hello {$user['name']}!";
-        } else {
-            $message = 'Hello! You are not logged in!';
-        }
-
-
         $content = (new View([
             'title' => 'BE STRONG Fitness Club!',
-            'heading' => $message,
             'links' => $links ?? []
         ]))->render(ROOT . '/app/templates/content/index.tpl.php');
 

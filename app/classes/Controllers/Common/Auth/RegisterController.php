@@ -9,8 +9,9 @@ use App\Views\Forms\Common\Auth\RegisterForm;
 
 class RegisterController extends GuestController
 {
-    protected  RegisterForm $form;
+    protected RegisterForm $form;
     protected BasePage $page;
+
     public function __construct()
     {
         parent::__construct();
@@ -21,6 +22,7 @@ class RegisterController extends GuestController
             'body-class' => 'register-body'
         ]);
     }
+
     public function register()
     {
         if ($this->form->validate()) {
