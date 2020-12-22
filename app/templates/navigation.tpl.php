@@ -9,7 +9,7 @@
         </div>
         <div class="nav-side">
             <?php foreach ($data['right'] as $title => $link): ?>
-                <li>
+                <li class="nav-list">
                     <a href="<?php print $title; ?>"><?php print $link; ?></a>
                 </li>
             <?php endforeach; ?>

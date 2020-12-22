@@ -20,15 +20,23 @@ class FeedbackApiController
         $form = new FeedbackCreateForm();
 
         if ($form->validate()) {
-            $user = App::$session->getUser();
+            $users = App::$db->getRowsWhere('users');
+            $session_user = App::$session->getUser();
+
+            foreach ($users as $id => $user) {
+                if ($session_user['email'] === $user['email']) {
+                    $user_id = $id;
+                }
+            }
+
 
             $feedback = $form->values();
             $feedback['id'] = App::$db->insertRow('feedback', $form->values() + [
-                    'name' => $user['name'],
+                    'user_id' => $user_id,
                     'date' => date('Y-m-d')
                 ]);
 
-            $feedback = $this->buildRow($user, $feedback);
+            $feedback = $this->buildRow($session_user, $feedback);
 
             $response->setData($feedback);
         } else {
@@ -43,15 +51,15 @@ class FeedbackApiController
     /**
      * Formats row for json to be put in the table in the same format.
      *
-     * @param $user
+     * @param $session_user
      * @param $feedback
      * @return array
      */
-    private function buildRow($user, $feedback): array
+    private function buildRow($session_user, $feedback): array
     {
         return $row = [
             'id' => $feedback['id'],
-            'name' => $user['name'],
+            'name' => $session_user['name'],
             'comment' => $feedback['comment'],
             'date' => date('Y-m-d')
         ];

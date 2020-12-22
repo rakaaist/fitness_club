@@ -15,17 +15,26 @@ class FeedbackApiController
 
         $feedback = App::$db->getRowsWhere('feedback');
 
+        $rows = $this->buildRows($feedback);
+
+        $response->setData($rows);
+
+        return $response->toJson();
+    }
+
+    private function buildRows($feedback)
+    {
         foreach ($feedback as $id => &$row) {
+            $user = App::$db->getRowById('users', $row['user_id']);
+
             $row = [
                 'id' => $id,
-                'name' => $row['name'],
+                'name' => $user['name'],
                 'comment' => $row['comment'],
                 'date' => $row['date']
             ];
         }
 
-        $response->setData($feedback);
-
-        return $response->toJson();
+        return $feedback;
     }
 }

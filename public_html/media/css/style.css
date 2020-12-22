@@ -51,10 +51,10 @@ ul {
 
 li {
     list-style: none;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
-li:last-child {
+.nav-list:last-child {
     margin-right: 0;
 }
 
@@ -65,7 +65,7 @@ a {
 }
 
 a:hover {
-    color: black;
+    color: #fa7894;
 }
 
 /*
@@ -160,12 +160,12 @@ textarea {
 
 .register-body {
     background-image: url("/media/images/register-bg.jpg");
-    background-position: right;
 }
 
 .register-body, .login-body {
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right;
 }
 
 /*
@@ -348,5 +348,4 @@ textarea {
         max-width: 350px;
         width: 100%;
     }
-
 }
